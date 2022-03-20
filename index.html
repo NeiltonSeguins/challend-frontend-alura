@@ -39,7 +39,7 @@
             />
           </div>
         </div>
-        <button class="header__button">Login</button>
+        <button class="header__button" onclick="{fazerLogin()}">Login</button>
       </header>
     </div>
     <main>
@@ -61,7 +61,7 @@
         <div class="produtos__content">
           <div class="produtos__header">
             <h2>Star Wars</h2>
-            <a href="#">Ver tudo <i>&RightArrow;</i></a>
+            <a href="./produtos-home.html">Ver tudo <i>&RightArrow;</i></a>
           </div>
 
           <ul class="produtos__lista">
@@ -73,7 +73,7 @@
               />
               <p class="produtos__description">Produto XYZ</p>
               <span class="produtos__valor">R$ 60,00</span>
-              <a class="produtos__link" href="#">Ver produto</a>
+              <a class="produtos__link" href="./produtos.html">Ver produto</a>
             </li>
             <li class="produtos__card">
               <img
@@ -284,7 +284,13 @@
           <form class="footer__form">
             <span>Fale conosco</span>
             <label for="name"></label>
-            <input type="text" name="name" id="name" placeholder="Nome" required />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Nome"
+              required
+            />
             <textarea
               name="mensagem"
               id="mensagem"
