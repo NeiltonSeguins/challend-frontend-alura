@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   height: 352px;
   width: 100vw;
-  position: absolute;
+  /* position: absolute; */
 }
 
 .hero__wrapper {
