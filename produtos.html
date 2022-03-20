@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AluraGeek Produto</title>
+    <link rel="stylesheet" href="./styles/base/reset.css" />
+    <link rel="stylesheet" href="./styles/base/normalize.css" />
+    <link rel="stylesheet" href="./styles/base/globalStyle.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/produtos.css" />
+    <link rel="stylesheet" href="./styles/produtos-page.css" />
+  </head>
+  <body>
+    <!-- Seção cabeçalho -->
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <img
+            class="header__img"
+            src="./assets/img/Logo.png"
+            alt="Logo da empresa AluraGeek"
+          />
+          <div class="header__input">
+            <label for="buscador"
+              ><input
+                class="header__input--border"
+                type="text"
+                name="buscador"
+                placeholder="O que deseja encontrar?"
+              />
+            </label>
+            <img
+              class="header__icon"
+              src="./assets/img/searchIcon.svg"
+              alt="Ícone de lupa"
+            />
+          </div>
+        </div>
+        <button class="header__button">Login</button>
+      </header>
+    </div>
+    <main>
+      <div class="produtos__page wrapper">
+        <div class="produtos__page--align">
+          <img
+            class="produtos__page--img"
+            src="./assets/img/produtos-page.png"
+            alt=""
+          />
+          <div class="produtos__page--container">
+            <h2>Produto XYZ</h2>
+            <span>R$ 60,00</span>
+            <p>
+              Voluptas voluptatum quibusdam similique, class debitis alias
+              maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis,
+              minima malesuada habitasse distinctio sequi aliqua malesuada.
+              Quisque deleniti proin expedita, aliquid litora. Iste recusandae?
+              Commodo, quia ridiculus doloribus vero dictum? Penatibus donec
+              placeat faucibus, dolorum do. Animi porta anim magnam
+            </p>
+          </div>
+        </div>
+        <div class="produtos__content">
+          <div class="produtos__header">
+            <h2>Produtos similares</h2>
+          </div>
+
+          <ul class="produtos__lista">
+            <li class="produtos__card">
+              <img
+                class="produtos__img"
+                src="./assets/img/produtos/star wars/unsplash_6FDXGY9J6y4.png"
+                alt=""
+              />
+              <p class="produtos__description">Produto XYZ</p>
+              <span class="produtos__valor">R$ 60,00</span>
+              <a class="produtos__link" href="#">Ver produto</a>
+            </li>
+            <li class="produtos__card">
+              <img
+                class="produtos__img"
+                src="./assets/img/produtos/star wars/unsplash_epRFE_hBNjo.png"
+                alt=""
+              />
+              <p class="produtos__description">Produto XYZ</p>
+              <span class="produtos__valor">R$ 60,00</span>
+              <a class="produtos__link" href="#">Ver produto</a>
+            </li>
+            <li class="produtos__card">
+              <img
+                class="produtos__img"
+                src="./assets/img/produtos/star wars/unsplash_KeGToDVN0l4.png"
+                alt=""
+              />
+              <p class="produtos__description">Produto XYZ</p>
+              <span class="produtos__valor">R$ 60,00</span>
+              <a class="produtos__link" href="#">Ver produto</a>
+            </li>
+            <li class="produtos__card">
+              <img
+                class="produtos__img"
+                src="./assets/img/produtos/star wars/unsplash_4OHkK555s1A.png"
+                alt=""
+              />
+              <p class="produtos__description">Produto XYZ</p>
+              <span class="produtos__valor">R$ 60,00</span>
+              <a class="produtos__link" href="#">Ver produto</a>
+            </li>
+            <li class="produtos__card">
+              <img
+                class="produtos__img"
+                src="./assets/img/produtos/star wars/unsplash_R8L1l9RN198.png"
+                alt=""
+              />
+              <p class="produtos__description">Produto XYZ</p>
+              <span class="produtos__valor">R$ 60,00</span>
+              <a class="produtos__link" href="#">Ver produto</a>
+            </li>
+            <li class="produtos__card">
+              <img
+                class="produtos__img"
+                src="./assets/img/produtos/star wars/unsplash_1VV1MRafd7A.png"
+                alt=""
+              />
+              <p class="produtos__description">Produto XYZ</p>
+              <span class="produtos__valor">R$ 60,00</span>
+              <a class="produtos__link" href="#">Ver produto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <!-- Seção footer -->
+    <footer class="footer">
+      <div class="footer__content wrapper">
+        <div class="footer__align">
+          <img class="footer__logo" src="./assets/img/Logo.png" alt="" />
+          <div class="footer__links">
+            <a href="#">Quem somos nós</a>
+            <a href="#">Política de privacidade</a>
+            <a href="#">Programa fidelidade</a>
+            <a href="#">Nossas lojas</a>
+            <a href="#">Quero ser franqueado</a>
+            <a href="#">Anuncie aqui</a>
+          </div>
+          <form class="footer__form">
+            <span>Fale conosco</span>
+            <label for="name"></label>
+            <input type="text" name="name" id="name" placeholder="Nome" required />
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              cols="30"
+              rows="4"
+              placeholder="Escreva sua mensagem"
+            ></textarea>
+            <button type="submit">Enviar mensagem</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__sign">
+        <h3>Desenvolvido por Neilton Seguins &copy;</h3>
+        <p>2022</p>
+      </div>
+    </footer>
+  </body>
+</html>

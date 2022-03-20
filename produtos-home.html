@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alura Geek</title>
+    <title>Alura Geek Produtos Home</title>
     <link rel="stylesheet" href="./styles/base/reset.css" />
     <link rel="stylesheet" href="./styles/base/normalize.css" />
     <link rel="stylesheet" href="./styles/base/globalStyle.css" />
@@ -42,26 +42,14 @@
         <button class="header__button">Login</button>
       </header>
     </div>
-    <main>
-      <!-- Seção Hero -->
-      <section>
-        <div class="hero">
-          <div class="hero__wrapper">
-            <h1 class="hero__title">Dezembro Promocional</h1>
-            <p class="hero__description">
-              Produtos selecionados com 33% de desconto
-            </p>
-            <button type="button" class="hero__button">Ver Consoles</button>
-          </div>
-        </div>
-      </section>
+    <main class=".corDeFundo">
       <!-- Seção de produtos -->
       <section class="produtos">
         <!-- Star wars -->
         <div class="produtos__content">
           <div class="produtos__header">
-            <h2>Star Wars</h2>
-            <a href="#">Ver tudo <i>&RightArrow;</i></a>
+            <h2>Todos os produtos</h2>
+            <button class="produtos__button">Adicionar produto</button>
           </div>
 
           <ul class="produtos__lista">
@@ -129,11 +117,6 @@
         </div>
         <!-- Consoles -->
         <div class="produtos__content">
-          <div class="produtos__header">
-            <h2>Consoles</h2>
-            <a href="#">Ver tudo <i>&RightArrow;</i></a>
-          </div>
-
           <ul class="produtos__lista">
             <li class="produtos__card">
               <img
@@ -199,11 +182,6 @@
         </div>
         <!-- Diversos -->
         <div class="produtos__content">
-          <div class="produtos__header">
-            <h2>Diversos</h2>
-            <a href="#">Ver tudo <i>&RightArrow;</i></a>
-          </div>
-
           <ul class="produtos__lista">
             <li class="produtos__card">
               <img
@@ -284,7 +262,13 @@
           <form class="footer__form">
             <span>Fale conosco</span>
             <label for="name"></label>
-            <input type="text" name="name" id="name" placeholder="Nome" required />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Nome"
+              required
+            />
             <textarea
               name="mensagem"
               id="mensagem"
