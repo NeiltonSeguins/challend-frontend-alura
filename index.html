@@ -18,11 +18,13 @@
     <div class="wrapper">
       <header class="header">
         <div class="header__container">
-          <img
-            class="header__img"
-            src="./assets/img/Logo.png"
-            alt="Logo da empresa AluraGeek"
-          />
+          <a href="">
+            <img
+              class="header__img"
+              src="./assets/img/Logo.png"
+              alt="Logo da empresa AluraGeek"
+            />
+          </a>
           <div class="header__input">
             <label for="buscador"
               ><input
@@ -55,6 +57,16 @@
           </div>
         </div>
       </section>
+
+      <section class="produtos lista-produtos">
+        <div class="produtos__content">
+          <p>Lista de produtos</p>
+          <div class="cards">
+            
+          </div>
+
+        </div>
+      </section>
       <!-- Seção de produtos -->
       <section class="produtos">
         <!-- Star wars -->
@@ -73,7 +85,7 @@
               />
               <p class="produtos__description">Produto XYZ</p>
               <span class="produtos__valor">R$ 60,00</span>
-              <a class="produtos__link" href="./produtos.html">Ver produto</a>
+              <a class="produtos__link" href="./produto.html">Ver produto</a>
             </li>
             <li class="produtos__card">
               <img
@@ -307,6 +319,6 @@
         <p>2022</p>
       </div>
     </footer>
-    <script src="./js/app.js"></script>
+    <script type="module" src="./js/app.js"></script>
   </body>
 </html>
