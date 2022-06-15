@@ -1,0 +1,30 @@
+
+.produto {
+    width: 1136px;
+    margin: 0 auto;
+    padding-top: 5em;
+    padding-bottom: 5em;
+
+    display: flex;
+}
+
+.product__img {
+    width: 40%;
+    height: 40vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.product__infos {
+    width: 50%;
+    align-self: center;
+    gap: 1em;
+}
+.product__infos p {
+    padding: 1rem 0;
+}
+
+.add__carrinho__button {
+    padding: 0;
+}
+
