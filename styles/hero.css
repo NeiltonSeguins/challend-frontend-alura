@@ -3,18 +3,18 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 352px;
-  width: 100vw;
+  /* width: 100vw; */
   /* position: absolute; */
 }
 
 .hero__wrapper {
-  width: 1136px;
+  /* width: 1136px; */
   height: 170px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0px 2rem;
   margin: 0 auto;
   position: relative;
   top: 150px;
