@@ -51,7 +51,7 @@ footer {
 .footer__form {
   display: flex;
   flex-direction: column;
-  /* width: 550px; */
+  width: 50%;
   /* height: 100%; */
 }
 
@@ -112,47 +112,3 @@ footer {
   font-weight: 500;
 }
 
-@media screen and (max-width: 1024px) {
-  .footer__align {
-    display: grid;
-    grid-auto-columns: 30% 70%;
-
-    gap: 0% 1rem;
-    grid-template-areas:
-      "footer__logo footer__form"
-      "footer__links footer__form";
-    align-items: stretch;
-  }
-
-  .footer__logo {
-    align-self: end;
-    grid-area: footer__logo;
-  }
-
-  .footer__links {
-    align-self: start;
-    grid-area: footer__links;
-  }
-
-  .footer__form {
-    grid-area: footer__form;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .footer__align {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .footer__logo {
-    align-self: center;
-  }
-
-  .footer__links {
-    align-self: center;
-    text-align: center;
-  }
-
-}

@@ -12,7 +12,7 @@ header {
 .header__container {
   display: flex;
   align-items: center;
-  width: 656px;
+  /* width: 656px; */
 }
 
 .header__img {
@@ -58,3 +58,4 @@ header {
   background-color: #2a7ae4;
   color: #fff;
 }
+
