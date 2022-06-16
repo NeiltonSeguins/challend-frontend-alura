@@ -1,309 +1,159 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alura Geek</title>
-  <link rel="stylesheet" href="./styles/base/reset.css" />
-  <link rel="stylesheet" href="./styles/base/normalize.css" />
-  <link rel="stylesheet" href="./styles/base/globalStyle.css" />
-  <link rel="stylesheet" href="./styles/header.css" />
-  <link rel="stylesheet" href="./styles/hero.css" />
-  <link rel="stylesheet" href="./styles/produtos.css" />
-  <link rel="stylesheet" href="./styles/footer.css" />
-  <link rel="stylesheet" href="./styles/base/responsive.css" />
-</head>
-
-<body>
-  <!-- Seção cabeçalho -->
-  <div class="nav">
-    <header class="header">
-      <div class="header__container">
-        <a href="/">
-          <img class="header__img" src="./assets/img/Logo.png" alt="Logo da empresa AluraGeek" />
-        </a>
-        <div class="header__input">
-          <label for="buscador"><input class="header__input--border" type="text" name="buscador"
-              placeholder="O que deseja encontrar?" />
-          </label>
-          <img class="header__icon" src="./assets/img/searchIcon.svg" alt="" />
-        </div>
-        
-      </div>
-
-      <button class="header__button" onclick="{fazerLogin()}">Login</button>
-    </header>
-  </div>
-  <main>
-    <!-- Seção Hero -->
-    <section>
-      <div class="hero">
-        <div class="hero__wrapper">
-          <h1 class="hero__title">Dezembro Promocional</h1>
-          <p class="hero__description">
-            Produtos selecionados com 33% de desconto
-          </p>
-          <button type="button" class="hero__button">Ver Consoles</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="produtos lista-produtos">
-      <div class="produtos__content">
-        <p>Lista de produtos</p>
-        <div class="cards">
-
-        </div>
-
-      </div>
-    </section>
-    <!-- Seção de produtos -->
-    <section class="produtos">
-
-      <!-- Star wars -->
-      <!-- <div class="produtos__content">
-          <div class="produtos__header">
-            <h2>Star Wars</h2>
-            <a href="./produtos-home.html">Ver tudo <i>&RightArrow;</i></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="./styles/base/reset.css" />
+    <link rel="stylesheet" href="./styles/base/normalize.css" />
+    <link rel="stylesheet" href="./styles/base/globalStyle.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/hero.css" />
+    <link rel="stylesheet" href="./styles/produtos.css" />
+    <link rel="stylesheet" href="./styles/carrinho.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+  </head>
+  <body>
+    <!-- Seção cabeçalho -->
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <a href="">
+            <img
+              class="header__img"
+              src="./assets/img/Logo.png"
+              alt="Logo da empresa AluraGeek"
+            />
+          </a>
+          <div class="header__input">
+            <label for="buscador"
+              ><input
+                class="header__input--border"
+                type="text"
+                name="buscador"
+                placeholder="O que deseja encontrar?"
+              />
+            </label>
+            <img
+              class="header__icon"
+              src="./assets/img/searchIcon.svg"
+              alt=""
+            />
           </div>
-
-          <ul class="produtos__lista">
-            <li class="produtos__card">
-              <img
-                class="produtos__img"
-                src="./assets/img/produtos/star wars/unsplash_6FDXGY9J6y4.png"
-                alt=""
-              />
-              <p class="produtos__description">Produto XYZ</p>
-              <span class="produtos__valor">R$ 60,00</span>
-              <a class="produtos__link" href="./produto.html">Ver produto</a>
-            </li>
-            <li class="produtos__card">
-              <img
-                class="produtos__img"
-                src="./assets/img/produtos/star wars/unsplash_epRFE_hBNjo.png"
-                alt=""
-              />
-              <p class="produtos__description">Produto XYZ</p>
-              <span class="produtos__valor">R$ 60,00</span>
-              <a class="produtos__link" href="#">Ver produto</a>
-            </li>
-            <li class="produtos__card">
-              <img
-                class="produtos__img"
-                src="./assets/img/produtos/star wars/unsplash_KeGToDVN0l4.png"
-                alt=""
-              />
-              <p class="produtos__description">Produto XYZ</p>
-              <span class="produtos__valor">R$ 60,00</span>
-              <a class="produtos__link" href="#">Ver produto</a>
-            </li>
-            <li class="produtos__card">
-              <img
-                class="produtos__img"
-                src="./assets/img/produtos/star wars/unsplash_4OHkK555s1A.png"
-                alt=""
-              />
-              <p class="produtos__description">Produto XYZ</p>
-              <span class="produtos__valor">R$ 60,00</span>
-              <a class="produtos__link" href="#">Ver produto</a>
-            </li>
-            <li class="produtos__card">
-              <img
-                class="produtos__img"
-                src="./assets/img/produtos/star wars/unsplash_R8L1l9RN198.png"
-                alt=""
-              />
-              <p class="produtos__description">Produto XYZ</p>
-              <span class="produtos__valor">R$ 60,00</span>
-              <a class="produtos__link" href="#">Ver produto</a>
-            </li>
-            <li class="produtos__card">
-              <img
-                class="produtos__img"
-                src="./assets/img/produtos/star wars/unsplash_1VV1MRafd7A.png"
-                alt=""
-              />
-              <p class="produtos__description">Produto XYZ</p>
-              <span class="produtos__valor">R$ 60,00</span>
-              <a class="produtos__link" href="#">Ver produto</a>
-            </li>
-          </ul>
-        </div> -->
-
-      <!-- Consoles -->
-      <!-- <div class="produtos__content">
-          <div class="produtos__header">
-            <h2>Consoles</h2>
-            <a href="#">Ver tudo <i>&RightArrow;</i></a>
-          </div>
-
-          <ul class="produtos__lista">
-            <li class="produtos__card">
-              <img
-                class="produtos__img"
-                src="./assets/img/produtos/consoles/Skill.png"
-                alt=""
-              />
-              <p class="produtos__description">Produto XYZ</p>
-              <span class="produtos__valor">R$ 60,00</span>
-              <a class="produtos__link" href="#">Ver produto</a>
-            </li>
-            <li class="produtos__card">
-              <img
-                class="produtos__img"
-                src="./assets/img/produtos/consoles/unsplash_caNzzoxls8Q.png"
-                alt=""
-              />
-              <p class="produtos__description">Produto XYZ</p>
-              <span class="produtos__valor">R$ 60,00</span>
-              <a class="produtos__link" href="#">Ver produto</a>
-            </li>
-            <li class="produtos__card">
-              <img
-                class="produtos__img"
-                src="./assets/img/produtos/consoles/unsplash_ZV7lnfyQLmA.png"
-                alt=""
-              />
-              <p class="produtos__description">Produto XYZ</p>
-              <span class="produtos__valor">R$ 60,00</span>
-              <a class="produtos__link" href="#">Ver produto</a>
-            </li>
-            <li class="produtos__card">
-              <img
-                class="produtos__img"
-                src="./assets/img/produtos/consoles/unsplash_wa5z9o9fgjw.png"
-                alt=""
-              />
-              <p class="produtos__description">Produto XYZ</p>
-              <span class="produtos__valor">R$ 60,00</span>
-              <a class="produtos__link" href="#">Ver produto</a>
-            </li>
-            <li class="produtos__card">
-              <img
-                class="produtos__img"
-                src="./assets/img/produtos/consoles/unsplash_Zjn4dT993-g.png"
-                alt=""
-              />
-              <p class="produtos__description">Produto XYZ</p>
-              <span class="produtos__valor">R$ 60,00</span>
-              <a class="produtos__link" href="#">Ver produto</a>
-            </li>
-            <li class="produtos__card">
-              <img
-                class="produtos__img"
-                src="./assets/img/produtos/consoles/unsplash_k-xYhI3-gJM.png"
-                alt=""
-              />
-              <p class="produtos__description">Produto XYZ</p>
-              <span class="produtos__valor">R$ 60,00</span>
-              <a class="produtos__link" href="#">Ver produto</a>
-            </li>
-          </ul>
-        </div> -->
-
-      <!-- Diversos -->
-      <!-- <div class="produtos__content">
-          <div class="produtos__header">
-            <h2>Diversos</h2>
-            <a href="#">Ver tudo <i>&RightArrow;</i></a>
-          </div>
-
-          <ul class="produtos__lista">
-            <li class="produtos__card">
-              <img
-                class="produtos__img"
-                src="./assets/img/produtos/diversos/Skill.png"
-                alt=""
-              />
-              <p class="produtos__description">Produto XYZ</p>
-              <span class="produtos__valor">R$ 60,00</span>
-              <a class="produtos__link" href="#">Ver produto</a>
-            </li>
-            <li class="produtos__card">
-              <img
-                class="produtos__img"
-                src="./assets/img/produtos/diversos/unsplash_bUgaIaZysH0.png"
-                alt=""
-              />
-              <p class="produtos__description">Produto XYZ</p>
-              <span class="produtos__valor">R$ 60,00</span>
-              <a class="produtos__link" href="#">Ver produto</a>
-            </li>
-            <li class="produtos__card">
-              <img
-                class="produtos__img"
-                src="./assets/img/produtos/diversos/unsplash_sYVY_ZKwaxU.png"
-                alt=""
-              />
-              <p class="produtos__description">Produto XYZ</p>
-              <span class="produtos__valor">R$ 60,00</span>
-              <a class="produtos__link" href="#">Ver produto</a>
-            </li>
-            <li class="produtos__card">
-              <img
-                class="produtos__img"
-                src="./assets/img/produtos/diversos/unsplash_jMT6BrgBuXU.png"
-                alt=""
-              />
-              <p class="produtos__description">Produto XYZ</p>
-              <span class="produtos__valor">R$ 60,00</span>
-              <a class="produtos__link" href="#">Ver produto</a>
-            </li>
-            <li class="produtos__card">
-              <img
-                class="produtos__img"
-                src="./assets/img/produtos/diversos/unsplash_MxVkWPiJALs.png"
-                alt=""
-              />
-              <p class="produtos__description">Produto XYZ</p>
-              <span class="produtos__valor">R$ 60,00</span>
-              <a class="produtos__link" href="#">Ver produto</a>
-            </li>
-            <li class="produtos__card">
-              <img
-                class="produtos__img"
-                src="./assets/img/produtos/diversos/unsplash_r27umXAelDc.png"
-                alt=""
-              />
-              <p class="produtos__description">Produto XYZ</p>
-              <span class="produtos__valor">R$ 60,00</span>
-              <a class="produtos__link" href="#">Ver produto</a>
-            </li>
-          </ul>
-        </div> -->
-
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer__content">
-      <div class="footer__align">
-        <img class="footer__logo" src="./assets/img/Logo.png" alt="" />
-        <div class="footer__links">
-          <a href="#">Quem somos nós</a>
-          <a href="#">Política de privacidade</a>
-          <a href="#">Programa fidelidade</a>
-          <a href="#">Nossas lojas</a>
-          <a href="#">Quero ser franqueado</a>
-          <a href="#">Anuncie aqui</a>
         </div>
-        <form class="footer__form">
-          <span>Fale conosco</span>
-          <label for="name"></label>
-          <input type="text" name="name" id="name" placeholder="Nome" required />
-          <textarea name="mensagem" id="mensagem" cols="30" rows="4" placeholder="Escreva sua mensagem"></textarea>
-          <button type="submit">Enviar mensagem</button>
-        </form>
-      </div>
+        <div class="header__buttons">
+          <img
+            class="header__carrinho"
+            src="./assets/img/carrinho.svg"
+            alt="icon do carrinho de compras"
+            onclick="handleCarrinho()"
+          />
+          <button class="header__button" onclick="fazerLogin()">Login</button>
+        </div>
+      </header>
     </div>
-    <div class="footer__sign">
-      <h3>Desenvolvido por Neilton Seguins &copy;</h3>
-      <p>2022</p>
-    </div>
-  </footer>
-  <script type="module" src="./js/app.js"></script>
-</body>
+    <main>
+      <!-- Seção Hero -->
+      <section>
+        <div class="hero">
+          <div class="hero__wrapper">
+            <h1 class="hero__title">Dezembro Promocional</h1>
+            <p class="hero__description">
+              Produtos selecionados com 33% de desconto
+            </p>
+            <a href="#produtos" class="hero__button">Ver Consoles</a>
+          </div>
 
+        </div>
+      </div>
+    </section>
+
+
+      <!-- Seção de produtos -->
+      <section class="produtos" id="produtos"></section>
+
+      <section class="carrinho">
+        <div class="carrinho__container">
+          <div class="carrinho__header">
+            <h2 class="carrinho__title">Meu carrinho</h2>
+            <img
+              src="./assets/img/fechar.svg"
+              alt="icon fechar carrinho"
+              onclick="handleCarrinho()"
+              class="carrinho__fechar"
+            />
+          </div>
+          <div class="carrinho__produto">
+            <img
+              class="carrinho__produto__imagem"
+              src="./assets/img/produtos/star wars/unsplash_1VV1MRafd7A.png"
+              alt="imagem do produto"
+            />
+            <div class="carrinho__produto__info">
+              <div class="carrinho__produto__valores">
+                <p class="carrinho__produto__titulo">Produto XYZ</p>
+                <img
+                  class="carrinho__produto__excluir"
+                  src="./assets/img/lixeira.svg"
+                  alt="excluir"
+                />
+              </div>
+              <div class="carrinho__produto__valores">
+                <p class="carrinho__produto__preco">R$ 60,00</p>
+                <p class="carrinho__produto__quantidade">2</p>
+              </div>
+            </div>
+          </div>
+          <div class="carrinho__informacoes">
+            <p class="carrinho__textos__total">Total</p>
+            <p class="carrinho__valores__total">R$ 120,00</p>
+          </div>
+          <button class="button__carrinho">Finalizar compra</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content wrapper">
+        <div class="footer__align">
+          <img class="footer__logo" src="./assets/img/Logo.png" alt="" />
+          <div class="footer__links">
+            <a href="#">Quem somos nós</a>
+            <a href="#">Política de privacidade</a>
+            <a href="#">Programa fidelidade</a>
+            <a href="#">Nossas lojas</a>
+            <a href="#">Quero ser franqueado</a>
+            <a href="#">Anuncie aqui</a>
+          </div>
+          <form class="footer__form">
+            <span>Fale conosco</span>
+            <label for="name"></label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Nome"
+              required
+            />
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              cols="30"
+              rows="4"
+              placeholder="Escreva sua mensagem"
+            ></textarea>
+            <button type="submit">Enviar mensagem</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__sign">
+        <h3>Desenvolvido por Neilton Seguins &copy;</h3>
+        <p>2022</p>
+      </div>
+    </footer>
+    <script type="module" src="./js/app.js"></script>
+    <script src="./js/interacoes.js"></script>
+  </body>
 </html>
