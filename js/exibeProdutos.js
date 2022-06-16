@@ -25,7 +25,7 @@ export function exibeProdutos(dados) {
             />
             <p class="produtos__description">${produto.titulo}</p>
             <span class="produtos__valor">R$ ${produto.preco},00</span>
-            <a class="produtos__link" href="./produto.html?id=${produto.id}&&categoria=${produto.categoria}">Ver produto</a>
+            <a class="produtos__link" href="./produtos.html?id=${produto.id}&categoria=${produto.categoria}">Ver produto</a>
         `;
 
       const itemProduto = document.createElement('li');
