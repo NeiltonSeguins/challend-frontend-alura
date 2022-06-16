@@ -23,6 +23,6 @@ body {
 }
 
 .wrapper {
-  width: 1136px;
+  /* width: 100vw; */
   margin: 0 auto;
 }
