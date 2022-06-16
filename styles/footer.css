@@ -4,7 +4,7 @@ footer {
 
 .footer {
   background-color: var(--terciary-color);
-  width: 100vw;
+  /* width: 100vw; */
   /* height: auto; */
 }
 
