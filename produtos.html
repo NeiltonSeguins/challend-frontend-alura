@@ -18,11 +18,12 @@
     <div class="wrapper">
       <header class="header">
         <div class="header__container">
-          <img
-            class="header__img"
-            src="./assets/img/Logo.png"
-            alt="Logo da empresa AluraGeek"
-          />
+          <a href="/"
+            ><img
+              class="header__img"
+              src="./assets/img/Logo.png"
+              alt="Logo da empresa AluraGeek"
+          /></a>
           <div class="header__input">
             <label for="buscador"
               ><input
@@ -43,95 +44,7 @@
       </header>
     </div>
     <main>
-      <div class="produtos__page wrapper">
-        <div class="produtos__page--align">
-          <img
-            class="produtos__page--img"
-            src="./assets/img/produtos-page.png"
-            alt=""
-          />
-          <div class="produtos__page--container">
-            <h2>Produto XYZ</h2>
-            <span>R$ 60,00</span>
-            <p>
-              Voluptas voluptatum quibusdam similique, class debitis alias
-              maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis,
-              minima malesuada habitasse distinctio sequi aliqua malesuada.
-              Quisque deleniti proin expedita, aliquid litora. Iste recusandae?
-              Commodo, quia ridiculus doloribus vero dictum? Penatibus donec
-              placeat faucibus, dolorum do. Animi porta anim magnam
-            </p>
-          </div>
-        </div>
-        <div class="produtos__content">
-          <div class="produtos__header">
-            <h2>Produtos similares</h2>
-          </div>
-
-          <ul class="produtos__lista">
-            <li class="produtos__card">
-              <img
-                class="produtos__img"
-                src="./assets/img/produtos/star wars/unsplash_6FDXGY9J6y4.png"
-                alt=""
-              />
-              <p class="produtos__description">Produto XYZ</p>
-              <span class="produtos__valor">R$ 60,00</span>
-              <a class="produtos__link" href="#">Ver produto</a>
-            </li>
-            <li class="produtos__card">
-              <img
-                class="produtos__img"
-                src="./assets/img/produtos/star wars/unsplash_epRFE_hBNjo.png"
-                alt=""
-              />
-              <p class="produtos__description">Produto XYZ</p>
-              <span class="produtos__valor">R$ 60,00</span>
-              <a class="produtos__link" href="#">Ver produto</a>
-            </li>
-            <li class="produtos__card">
-              <img
-                class="produtos__img"
-                src="./assets/img/produtos/star wars/unsplash_KeGToDVN0l4.png"
-                alt=""
-              />
-              <p class="produtos__description">Produto XYZ</p>
-              <span class="produtos__valor">R$ 60,00</span>
-              <a class="produtos__link" href="#">Ver produto</a>
-            </li>
-            <li class="produtos__card">
-              <img
-                class="produtos__img"
-                src="./assets/img/produtos/star wars/unsplash_4OHkK555s1A.png"
-                alt=""
-              />
-              <p class="produtos__description">Produto XYZ</p>
-              <span class="produtos__valor">R$ 60,00</span>
-              <a class="produtos__link" href="#">Ver produto</a>
-            </li>
-            <li class="produtos__card">
-              <img
-                class="produtos__img"
-                src="./assets/img/produtos/star wars/unsplash_R8L1l9RN198.png"
-                alt=""
-              />
-              <p class="produtos__description">Produto XYZ</p>
-              <span class="produtos__valor">R$ 60,00</span>
-              <a class="produtos__link" href="#">Ver produto</a>
-            </li>
-            <li class="produtos__card">
-              <img
-                class="produtos__img"
-                src="./assets/img/produtos/star wars/unsplash_1VV1MRafd7A.png"
-                alt=""
-              />
-              <p class="produtos__description">Produto XYZ</p>
-              <span class="produtos__valor">R$ 60,00</span>
-              <a class="produtos__link" href="#">Ver produto</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <div class="produtos__page wrapper" id="produtos-page"></div>
     </main>
     <!-- Seção footer -->
     <footer class="footer">
@@ -149,7 +62,13 @@
           <form class="footer__form">
             <span>Fale conosco</span>
             <label for="name"></label>
-            <input type="text" name="name" id="name" placeholder="Nome" required />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Nome"
+              required
+            />
             <textarea
               name="mensagem"
               id="mensagem"
@@ -166,5 +85,6 @@
         <p>2022</p>
       </div>
     </footer>
+    <script type="module" src="./js/paginaProduto.js"></script>
   </body>
 </html>
