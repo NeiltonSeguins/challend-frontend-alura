@@ -64,6 +64,7 @@ function montaHtmlDoProduto(produto, id) {
         <h2>${produto.titulo}</h2>
         <span>R$ ${produto.preco},00</span>
         <p>${produto.descricao}</p>
+        <button class="produtos__button">Adicionar ao carrinho</button>
       </div>
   `;
 

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/base/reset.css" />
     <link rel="stylesheet" href="./styles/base/normalize.css" />
     <link rel="stylesheet" href="./styles/base/globalStyle.css" />
+    <link rel="stylesheet" href="./styles/carrinho.css" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/produtos.css" />
@@ -41,12 +42,59 @@
               alt="Ícone de lupa"
             />
           </div>
+        </div><div class="header__buttons">
+          <img
+            class="header__carrinho"
+            src="./assets/img/carrinho.svg"
+            alt="icon do carrinho de compras"
+            onclick="handleCarrinho()"
+          />
+          <button class="header__button" onclick="fazerLogin()">Login</button>
         </div>
-        <button class="header__button">Login</button>
       </header>
     </div>
     <main>
-      <div class="produtos__page wrapper" id="produtos-page"></div>
+      <div class="produtos__page wrapper produtos" id="produtos-page"></div>
+      <section class="carrinho">
+        <div class="carrinho__container">
+          <div class="carrinho__header">
+            <h2 class="carrinho__title">Meu carrinho</h2>
+            <img
+              src="./assets/img/fechar.svg"
+              alt="icon fechar carrinho"
+              onclick="handleCarrinho()"
+              class="carrinho__fechar"
+            />
+          </div>
+          <div class="carrinho__produto">
+            <img
+              class="carrinho__produto__imagem"
+              src="./assets/img/produtos/star wars/unsplash_1VV1MRafd7A.png"
+              alt="imagem do produto"
+            />
+            <div class="carrinho__produto__info">
+              <div class="carrinho__produto__valores">
+                <p class="carrinho__produto__titulo">Produto XYZ</p>
+                <img
+                  class="carrinho__produto__excluir"
+                  src="./assets/img/lixeira.svg"
+                  alt="excluir"
+                />
+              </div>
+              <div class="carrinho__produto__valores">
+                <p class="carrinho__produto__preco">R$ 60,00</p>
+                <p class="carrinho__produto__quantidade">2</p>
+              </div>
+            </div>
+          </div>
+          <div class="carrinho__informacoes">
+            <p class="carrinho__textos__total">Total</p>
+            <p class="carrinho__valores__total">R$ 120,00</p>
+          </div>
+          <button class="button__carrinho" onclick="location.href='resumo.html'">Finalizar compra</button>
+        </div>
+      </section>
+      
     </main>
     <!-- Seção footer -->
     <footer class="footer">
@@ -88,5 +136,6 @@
       </div>
     </footer>
     <script type="module" src="./js/paginaProduto.js"></script>
+    <script src="./js/interacoes.js"></script>
   </body>
 </html>
