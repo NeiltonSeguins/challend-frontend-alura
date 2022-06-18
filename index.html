@@ -14,8 +14,10 @@
     <link rel="stylesheet" href="./styles/hero.css" />
     <link rel="stylesheet" href="./styles/produtos.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
   </head>
   <body>
+    <div class="modal__dark"></div>
     <!-- Seção cabeçalho -->
     <div class="wrapper">
       <header class="header">
@@ -119,6 +121,12 @@
           </div>
           <button class="button__carrinho">Finalizar compra</button>
         </div>
+      </section>
+      <section class="modal">
+        <img src="./assets/img/Logo.svg" alt="Logo da AluraGeek" class="modal__logo">
+        <h2 class="modal__titulo">Compra finalizada com sucesso!</h2>
+        <p class="modal__subtitulo">Você receberá a confirmação da sua compra por email. Acompanhe o status do seu pedido por lá.</p>
+        <a class="modal__botao button" href="index.html">Voltar para a loja</a>
       </section>
     </main>
 

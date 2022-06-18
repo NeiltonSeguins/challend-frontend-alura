@@ -36,3 +36,17 @@ input.addEventListener("keydown", function (e) {
         calcularFrete();
     }
 });
+
+const botaoCarrinho = document.querySelector('.button__carrinho');
+const modal = document.querySelector('.modal');
+const modalDark = document.querySelector('.modal__dark');
+const carrinho = document.querySelector('.carrinho');
+botaoCarrinho.addEventListener('click', () => {
+  modal.classList.toggle('modal--ativo');
+  modalDark.classList.toggle('modal__dark--ativo');
+  carrinho.classList.toggle('carrinho--ativo');
+});
+modalDark.addEventListener('click', () => {
+  modal.classList.toggle('modal--ativo');
+  modalDark.classList.toggle('modal__dark--ativo');
+});
