@@ -87,14 +87,20 @@
               </div>
             </div>
           </div>
+          <div class="frete">
+            <div class="frete__calcular">
+              <input class="frete__input" maxlength="8" type="text" placeholder="Digite o CEP">
+              <button class="frete__botao" onclick="calcularFrete()">Calcular frete</button>
+            </div>
+            <span class="frete__valor"></span>
+          </div>
           <div class="carrinho__informacoes">
             <p class="carrinho__textos__total">Total</p>
             <p class="carrinho__valores__total">R$ 120,00</p>
           </div>
-          <button class="button__carrinho" onclick="location.href='resumo.html'">Finalizar compra</button>
+          <button class="button__carrinho">Finalizar compra</button>
         </div>
       </section>
-      
     </main>
     <!-- Seção footer -->
     <footer class="footer">
