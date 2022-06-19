@@ -1,7 +1,7 @@
 @media screen and (min-width: 1136px){
     .produtos {
         width:75%;
-        margin: 0 auto;
+        /* margin: 0 auto; */
     }
 }
 @media screen and (max-width: 1024px) {
@@ -69,6 +69,9 @@
     .hero__button {
       font-size: 16px;
     }
+
+    /* Produto-Page */
+    
     /* Footer */
     .footer__align {
       display: flex;

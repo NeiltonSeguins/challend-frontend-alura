@@ -9,7 +9,7 @@ main {
 }
 
 .produtos__content {
-  margin: 50px 0;
+  margin: 50px auto;
 }
 
 .produtos__header {

@@ -5,12 +5,12 @@ main {
   display: flex;
   margin-top: 70px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .produtos__page--img {
-  height: 403px;
-  width: 460px;
+  height: 40vh;
+  /* width: 460px; */
 }
 
 .produtos__page--container {

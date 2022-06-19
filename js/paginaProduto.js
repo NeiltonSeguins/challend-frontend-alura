@@ -16,7 +16,7 @@ function paginaProduto(dados) {
         `;
 
   const produtosSimilares = document.createElement('div');
-  produtosSimilares.classList.add('produtos__content');
+  produtosSimilares.classList.add('produtos__content', 'produtos');
   produtosSimilares.innerHTML = tituloSecao;
 
   const listaProdutos = document.createElement('ul');
