@@ -3,8 +3,9 @@ main {
 }
 
 .produtos {
-  width: 1136px;
+  width: 100vw;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .produtos__content {
@@ -39,6 +40,10 @@ main {
 .produtos__lista {
   display: flex;
   justify-content: space-between;
+
+  overflow-x: scroll;
+  overflow-y: clip;
+  padding-bottom: 1rem;
 }
 
 .produtos__card {
