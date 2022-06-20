@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,15 +8,13 @@
     <link rel="stylesheet" href="./styles/base/reset.css" />
     <link rel="stylesheet" href="./styles/base/normalize.css" />
     <link rel="stylesheet" href="./styles/base/globalStyle.css" />
-    <link rel="stylesheet" href="./styles/carrinho.css" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/hero.css" />
     <link rel="stylesheet" href="./styles/produtos.css" />
+    <link rel="stylesheet" href="./styles/carrinho.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
-    <link rel="stylesheet" href="./styles/modal.css" />
   </head>
   <body>
-    <div class="modal__dark"></div>
     <!-- Seção cabeçalho -->
     <div class="wrapper">
       <header class="header">
@@ -67,11 +64,8 @@
             </p>
             <a href="#produtos" class="hero__button">Ver Consoles</a>
           </div>
-
         </div>
-      </div>
-    </section>
-
+      </section>
 
       <!-- Seção de produtos -->
       <section class="produtos" id="produtos"></section>
@@ -108,25 +102,12 @@
               </div>
             </div>
           </div>
-          <div class="frete">
-            <div class="frete__calcular">
-              <input class="frete__input" maxlength="8" type="text" placeholder="Digite o CEP">
-              <button class="frete__botao" onclick="calcularFrete()">Calcular frete</button>
-            </div>
-            <span class="frete__valor"></span>
-          </div>
           <div class="carrinho__informacoes">
             <p class="carrinho__textos__total">Total</p>
             <p class="carrinho__valores__total">R$ 120,00</p>
           </div>
           <button class="button__carrinho">Finalizar compra</button>
         </div>
-      </section>
-      <section class="modal">
-        <img src="./assets/img/Logo.svg" alt="Logo da AluraGeek" class="modal__logo">
-        <h2 class="modal__titulo">Compra finalizada com sucesso!</h2>
-        <p class="modal__subtitulo">Você receberá a confirmação da sua compra por email. Acompanhe o status do seu pedido por lá.</p>
-        <a class="modal__botao button" href="index.html">Voltar para a loja</a>
       </section>
     </main>
 

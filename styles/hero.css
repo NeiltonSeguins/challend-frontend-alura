@@ -2,38 +2,34 @@
   background-image: url("../assets/img/banner-image.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 30%;
-  height: 50vh;
-  /* width: 100vw; */
+  height: 352px;
+  width: 100vw;
   /* position: absolute; */
-  display: flex;
-  align-items: flex-end;
 }
 
 .hero__wrapper {
-  width: 90%;
-  /* height: 170px; */
-  /* display: flex;
+  width: 1136px;
+  height: 170px;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  */
-  padding: 2rem; 
+  padding: 0px;
   margin: 0 auto;
-  /* position: relative; */
-  bottom: 1px;
+  position: relative;
+  top: 150px;
 }
 
 .hero__title {
   font-weight: 700;
-  font-size: 3.2rem;
+  font-size: 52px;
   color: #fff;
   margin: 0;
 }
 
 .hero__description {
   font-weight: 700;
-  font-size: 1.375rem;
+  font-size: 22px;
   color: #fff;
   margin: 24px 0;
 }
@@ -41,8 +37,8 @@
 .hero__button {
   font-weight: 400;
   border: none;
-  padding: 1rem;
-  font-size: 1rem;
+  padding: 16px;
+  font-size: 16px;
   color: #fff;
   cursor: pointer;
   background-color: #2a7ae4;

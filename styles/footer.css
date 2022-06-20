@@ -4,26 +4,20 @@ footer {
 
 .footer {
   background-color: var(--terciary-color);
-  /* width: 100vw; */
-  /* height: auto; */
 }
 
 .footer__content {
-  /* height: 368px; */
+  height: 368px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  padding: 0 2rem;
-  /* height: 50vh; */
 }
 
 .footer__align {
-  /* height: 240px; */
+  height: 240px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 2rem 0;
 }
 
 .footer__logo {
@@ -35,10 +29,8 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* height: 234px; */
-  /* width: 176px; */
-
-  gap: 1rem;
+  height: 234px;
+  width: 176px;
 }
 
 .footer__links a {
@@ -51,8 +43,7 @@ footer {
 .footer__form {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  /* height: 100%; */
+  width: 550px;
 }
 
 .footer__form span {
@@ -66,7 +57,7 @@ footer {
 }
 
 .footer__form input {
-  /* width: 550px; */
+    width: 550px;
   height: 56px;
   background-color: #fff;
   outline: none;
@@ -86,7 +77,7 @@ footer {
   outline: none;
   margin-bottom: 0.5rem;
   resize: none;
-  /* width: 550px; */
+  width: 550px;
 }
 
 .footer button {
@@ -111,4 +102,3 @@ footer {
   color: var(--text-color);
   font-weight: 500;
 }
-
