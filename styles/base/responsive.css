@@ -90,7 +90,11 @@
     max-width: 420px;
     width: 100%;
   }
-
+  /* Home Produtos */
+  .produtos__button {
+    height: auto;
+    width: auto;
+  }
 
   /* Footer */
   .footer__align {
