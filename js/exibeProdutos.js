@@ -14,13 +14,10 @@ export function exibeProdutos(dados) {
 
     const divContent = document.createElement('div');
     divContent.classList.add('produtos__content');
+    divContent.innerHTML = categoriaContent;
 
-    if (
-      newUrl.pathname === '/challend-frontend-alura/index.html' ||
-      newUrl.pathname === '/challend-frontend-alura/'
-    ) {
-      console.log(newUrl.pathname);
-      divContent.innerHTML = categoriaContent;
+    if (newUrl.pathname === '/produtos-home.html') {
+      divContent.innerHTML = '';
     }
 
     const listaProdutos = document.createElement('ul');

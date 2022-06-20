@@ -26,13 +26,13 @@ main {
 
 .produtos__header a {
   font-weight: 700;
-  font-size: 1rem;  
+  font-size: 1rem;
   color: #2a7ae4;
   text-decoration: none;
 }
 
-.produtos__header .produtos__button{
-  color: #FFF;
+.produtos__header .produtos__button {
+  color: #fff;
   border: none;
   padding: 16px;
   cursor: pointer;
@@ -95,7 +95,12 @@ main {
   width: 165px;
 }
 
-.lista-add{
+.produtos__button:hover {
+  background-color: #1359b6;
+  transition: 0.5s;
+}
+
+.lista-add {
   display: flex;
   flex-wrap: wrap;
   row-gap: 50px;
