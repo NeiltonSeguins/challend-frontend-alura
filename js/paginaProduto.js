@@ -7,7 +7,7 @@ function paginaProduto(dados) {
 
   const id = parseInt(urlParam.get('id'));
   const categoria = urlParam.get('categoria');
-  console.log(id, categoria);
+  // console.log(id, categoria);
 
   const tituloSecao = `
           <div class="produtos__header">
@@ -26,7 +26,7 @@ function paginaProduto(dados) {
     dado.produtos.map((produto) => {
       if (produto.categoria === categoria) {
         montaHtmlDoProduto(produto, id);
-        console.log(produto);
+        // console.log(produto);
 
         const itemContent = `
           <img

@@ -73,14 +73,15 @@ main {
 }
 
 .produtos__button {
-  font-weight: 400;
+  background-color: #2a7ae4;
   border: none;
-  padding: 16px;
-  font-size: 16px;
-  font-weight: 400;
   color: #fff;
   cursor: pointer;
-  background-color: #2a7ae4;
+  font-size: 16px;
+  font-weight: 400;
+  font-weight: 400;
   height: 51px;
-  width: 165px;
+  margin-top: 1rem;
+  padding: 16px;
+  width: 200px;
 }
