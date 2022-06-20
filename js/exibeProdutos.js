@@ -15,7 +15,10 @@ export function exibeProdutos(dados) {
     const divContent = document.createElement('div');
     divContent.classList.add('produtos__content');
 
-    if (newUrl.pathname === '/index.html') {
+    if (
+      newUrl.pathname === '/challend-frontend-alura/index.html' ||
+      newUrl.pathname === '/challend-frontend-alura/'
+    ) {
       console.log(newUrl.pathname);
       divContent.innerHTML = categoriaContent;
     }
