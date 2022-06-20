@@ -84,3 +84,9 @@ main {
   height: 51px;
   width: 165px;
 }
+
+.lista-add {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+}
