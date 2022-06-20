@@ -26,3 +26,15 @@ body {
   /* width: 1136px; */
   margin: 0 auto;
 }
+
+.button {
+  font-weight: 500;
+  border: none;
+  padding: 16px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #2a7ae4;
+  text-decoration: none;
+  margin-top: 2rem;
+}

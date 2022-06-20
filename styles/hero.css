@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("../assets/img/banner-image.png");
+  background-image: url('../assets/img/banner-image.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 30%;
@@ -46,4 +46,10 @@
   color: #fff;
   cursor: pointer;
   background-color: #2a7ae4;
+  text-decoration: none;
+}
+
+.hero__button:hover {
+  background-color: #1359b6;
+  transition: 0.5s;
 }
