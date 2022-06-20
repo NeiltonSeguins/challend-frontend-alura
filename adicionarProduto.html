@@ -44,11 +44,12 @@
       </div>
     <main>
         <form action="" class="add__product" data-form>
-          <h1>Adicionar novo produto</h1>
+          <div id="mensagem"></div>
+          <h1 class="add__title">Adicionar novo produto</h1>
           <div class="add__product--upload">
             <div class="upload__file">
               <img src="assets/img/adicionar.png" alt="Imagem de montanhas" id="vizualizacao">
-              <p>Arraste para adicionar uma imagem para o produto</p>
+              <p>Arraste para adicionar uma imagem para o produto - ou Click aqui</p>
               <input id='select' type='file' class="add__product--select " multiple accept="image/*"/>
             </div>
             <div id="testando">
@@ -60,15 +61,15 @@
             </label>      -->
           </div>
           
-          <div class="add__product--input">
+          <div class="add__product--input ">
             <p class="img__select" data-imgFile></p>
-            <input type="text" placeholder="Categoria do produto" required id="categoria"/>
-            <input type="text" placeholder="Nome do Produto" required id="titulo"/>
-            <input type="number" placeholder="Preço do produto" required id="preco"/>
-            <textarea placeholder="Descrição do produto" required id="descricao"></textarea>
-            <input  type="submit" class="btn__submit" id="enviar" value="Adicionar produto" data-send>
+            <input class="valida" type="text" placeholder="Categoria do produto" required id="categoria"/>
+            <input class="valida" type="text" placeholder="Nome do Produto" required id="titulo"/>
+            <input class="valida" type="number" placeholder="Preço do produto" required id="preco"/>
+            <textarea class="valida" placeholder="Descrição do produto" required id="descricao"></textarea>
+            <input type="submit" class="btn__submit" id="enviar" value="Adicionar produto" data-send>
           </div>
-          <div class="msg" data-msg>Cadastrado com sucesso</div>
+          <p id="mensagem" class="msg-of msg"></p>
         </form>
       </main>
       <footer class="footer">

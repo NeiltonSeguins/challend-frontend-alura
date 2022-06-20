@@ -3,7 +3,31 @@
 
 var vizu = document.getElementById('vizualizacao');
 var selectImagem = document.getElementById('select');
-var formulario = document.querySelector('[data-form]')
+var formulario = document.querySelector('[data-form]');
+var camposForm = document.querySelectorAll('.valida');
+
+
+function ExibirMensagemSucesso() {
+  const msg = document.getElementById('mensagem');
+
+  msg.innerHTML = "Cadastrado com sucesso";
+  msg.classList.add('mansagemONSucesso');
+  setTimeout(() => {
+    msg.classList.remove('mansagemONSucesso');
+    msg.innerHTML = "";
+  }, 1500);
+}
+function ExibirMensagemErro() {
+  const msg = document.getElementById('mensagem');
+
+  msg.innerHTML = "Falta preencher algum campo";
+  msg.classList.add('mansagemONErro');
+  setTimeout(() => {
+    msg.classList.remove('mansagemONErro');
+    msg.innerHTML = "";
+  }, 1500);
+}
+
 document.getElementById('select').addEventListener('change', (e) => {
   let reader = new FileReader();
 
@@ -35,10 +59,15 @@ function limparCampos() {
 
 document.getElementById("enviar").addEventListener('click', (e) => {
   e.preventDefault();
-  
     carregar();
-    adicionar(conteudo);
-    limparCampos();
+   
+      if(formulario.reportValidity()){
+        adicionar(conteudo);
+        ExibirMensagemSucesso();
+      }else{
+        ExibirMensagemErro();
+      }
+   limparCampos();
 })
 
 var lista = [];

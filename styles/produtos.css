@@ -99,4 +99,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   row-gap: 50px;
+  column-gap: 13.3px;
+  justify-content: flex-start;
 }

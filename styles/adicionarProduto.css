@@ -13,18 +13,37 @@ main{
   flex-direction: column;
   justify-content: center;
   row-gap: 15px;
-  width: 100%;
+  width: 559px;
   margin: 10px 0 20px 0;
 
 }
-.add__product h1{
-  width: 465px;
-  font-size: 20px;
+.add__title{
+  width: 100%;
+  font-size: 32px;
   font-weight: bold;
   text-align: start;
   margin: 16px 0 0 0 ;
 }
 
+.mansagemONSucesso{
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(78, 196, 78);
+  padding: 20px 0;
+  color: #FFF;
+}
+.mansagemONErro{
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(236, 59, 59);
+  padding: 20px 0;
+  color: #FFF;
+}
+.msg-of{
+  display: none;
+}
 
 .add__product--upload{
   align-items: center;
@@ -44,7 +63,7 @@ main{
   gap: 10px;
   justify-content: center;
   height: 80px;
-  padding: 25px;
+  padding: 25px 0;
   position: relative;
   width: 100%;
 }
@@ -52,10 +71,6 @@ main{
 
 .upload__file p{
   text-align: center;
-}
-
-.add__product{
-  width: 776px;
 }
 
 .add__product--upload img{
@@ -122,9 +137,12 @@ main{
   color: #FFF;
   border: none;
   width: 100%;
+  cursor: pointer;
 }
 
-
+.btn__submit:hover{
+  background-color: #3d8df5;
+}
 
 .add__product--input input[type=text],
 .add__product--input input[type=number]{
@@ -163,32 +181,53 @@ main{
   display: block;
 }
 
-@media screen and (min-width: 550px) {
-  .add__product--upload{
-    flex-direction: row;
-    width: 80%;
+
+@media screen and (max-width: 768px) {
+  header{
+    margin-bottom: 50px;
   }
-  .add__product h1{
-    font-size: 32px;
-  }
-  .add__product--input{
-    align-items: center;
-  }
-  .add__product--input input,
-  .add__product--input textarea,
-  .img__select{
-    width: 80%;
+  header, .header__container, .footer__align{
+    flex-direction: column;
+    align-items: space-between;
   }
   
+  header, .header__container, form, .titulo-adicionar, .upload__file, .add__product--input, .footer__contenter, .wrapper{
+    width: 414px;
+  }
+  .upload__file{
+    width: 390px;
+  }
+  .upload__file p, .add__product--input input, .add__product--input textarea{
+    margin: 0 auto;
+    width: 90%;
+  }
+  main {
+    width: 414px;
+  }
+
+.add__title{
+  text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-  .add__product--upload{
-    width: 60%;
-  }
-  .add__product--input input,
-  .add__product--input textarea,
-  .img__select{
-    width: 60%;
-  }
+.upload__file{
+  padding: auto 5px;
 }
+
+
+ footer{
+  align-items: center;
+ }
+  .footer__align a, .footer__align span{
+    margin-left: 1.5em;
+  }
+  
+  .footer__logo{
+    margin-left: 1em;
+  }
+
+  .footer .wrapper{
+    margin-bottom: 30%;
+  }
+
+}
+
