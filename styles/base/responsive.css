@@ -23,6 +23,8 @@
     .hero__button {
       font-size: 16px;
     }
+    /* Produto Page */
+
   
     /* Footer */
     .footer__align {
@@ -71,7 +73,15 @@
     }
 
     /* Produto-Page */
-    
+    .produtos__page--align {
+      flex-direction: column;
+    }
+    .produtos__page--container {
+      width: 90%;
+      align-items: center;
+    }
+
+
     /* Footer */
     .footer__align {
       display: flex;

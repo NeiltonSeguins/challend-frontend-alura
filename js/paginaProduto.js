@@ -15,8 +15,10 @@ function paginaProduto(dados) {
           </div>
         `;
 
+  const produtosSection = document.createElement('section');
   const produtosSimilares = document.createElement('div');
-  produtosSimilares.classList.add('produtos__content', 'produtos');
+  produtosSection.classList.add('produtos');
+  produtosSimilares.classList.add('produtos__content');
   produtosSimilares.innerHTML = tituloSecao;
 
   const listaProdutos = document.createElement('ul');
@@ -43,7 +45,8 @@ function paginaProduto(dados) {
         itemProduto.innerHTML = itemContent;
         listaProdutos.appendChild(itemProduto);
       }
-      produtosDiv.appendChild(produtosSimilares);
+      produtosDiv.appendChild(produtosSection);
+      produtosSection.appendChild(produtosSimilares);
       produtosSimilares.appendChild(listaProdutos);
     });
   });
@@ -64,6 +67,7 @@ function montaHtmlDoProduto(produto, id) {
         <h2>${produto.titulo}</h2>
         <span>R$ ${produto.preco},00</span>
         <p>${produto.descricao}</p>
+        <button class="btn-add-carrinho button">Adicionar ao carrinho</button>
       </div>
   `;
 

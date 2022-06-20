@@ -43,7 +43,7 @@
   cursor: pointer;
 }
 
-.header__button {
+.header__button, .button {
   border: 1px solid #2a7ae4;
   background-color: transparent;
   padding: 1rem;
@@ -54,7 +54,7 @@
   transition: 0.1s ease-in-out;
 }
 
-.header__button:hover {
+.header__button:hover, .button:hover {
   cursor: pointer;
   background-color: #2a7ae4;
   color: #fff;
