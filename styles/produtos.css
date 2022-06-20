@@ -21,14 +21,24 @@ main {
 .produtos__header h2 {
   font-weight: 700;
   font-size: 2rem;
-  color: var(--text-color);
+  color: var(--primary-color);
 }
 
 .produtos__header a {
   font-weight: 700;
-  font-size: 1rem;
-  color: var(--primary-color);
+  font-size: 1rem;  
+  color: #2a7ae4;
   text-decoration: none;
+}
+
+.produtos__header .produtos__button{
+  color: #FFF;
+  border: none;
+  padding: 16px;
+  cursor: pointer;
+  background-color: #2a7ae4;
+  height: 16px;
+  width: 142px;
 }
 
 .produtos__header i {
@@ -85,7 +95,7 @@ main {
   width: 165px;
 }
 
-.lista-add {
+.lista-add{
   display: flex;
   flex-wrap: wrap;
   row-gap: 50px;
