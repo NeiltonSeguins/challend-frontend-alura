@@ -2,16 +2,23 @@ const sectionProdutos = document.querySelector('#produtos');
 
 export function exibeProdutos(dados) {
   dados.map((dado) => {
+    const url = window.location.href;
+    const newUrl = new URL(`${url}`);
+
     const categoriaContent = `
-        <div class="produtos__header">
-            <h2>${dado.categoria}</h2>
-            <a href="./produtos-home.html">Ver tudo <i>&RightArrow;</i></a>
-        </div>
-    `;
+    <div class="produtos__header">
+        <h2>${dado.categoria}</h2>
+        <a href="./produtos-home.html">Ver tudo <i>&RightArrow;</i></a>
+    </div>
+  `;
 
     const divContent = document.createElement('div');
     divContent.classList.add('produtos__content');
-    divContent.innerHTML = categoriaContent;
+
+    if (newUrl.pathname === '/index.html') {
+      console.log(newUrl.pathname);
+      divContent.innerHTML = categoriaContent;
+    }
 
     const listaProdutos = document.createElement('ul');
     listaProdutos.classList.add('produtos__lista');
