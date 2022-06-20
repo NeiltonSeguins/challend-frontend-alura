@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AluraGeek Produto</title>
     <link rel="stylesheet" href="./styles/base/reset.css" />
     <link rel="stylesheet" href="./styles/base/normalize.css" />
     <link rel="stylesheet" href="./styles/base/globalStyle.css" />
     <link rel="stylesheet" href="./styles/header.css" />
-    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/hero.css" />
     <link rel="stylesheet" href="./styles/produtos.css" />
-    <link rel="stylesheet" href="./styles/produtos-page.css" />
+    <link rel="stylesheet" href="./styles/adicionarProduto.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <title>AluraGeek Adicionar Produtos</title>
   </head>
   <body>
-    <!-- Seção cabeçalho -->
     <div class="wrapper">
       <header class="header">
         <div class="header__container">
@@ -36,17 +36,77 @@
             <img
               class="header__icon"
               src="./assets/img/searchIcon.svg"
-              alt="Ícone de lupa"
+              alt=""
             />
           </div>
         </div>
-        <button class="header__button">Login</button>
+        <button class="header__button" onclick="{fazerLogin()}">Login</button>
       </header>
     </div>
     <main>
-      <div class="produtos__page wrapper" id="produtos-page"></div>
+      <form action="" class="add__product" data-form>
+        <h1>Adicionar novo produto</h1>
+        <div class="add__product--upload">
+          <div class="upload__file">
+            <img
+              src="assets/img/adicionar.png"
+              alt="Imagem de montanhas"
+              id="vizualizacao"
+            />
+            <p>Arraste para adicionar uma imagem para o produto</p>
+            <input
+              id="select"
+              type="file"
+              class="add__product--select"
+              multiple
+              accept="image/*"
+            />
+          </div>
+          <div id="testando">
+            <!-- javascript -->
+          </div>
+          <!-- <p>Ou</p>
+            <label for='select' class="btn__submit label">Fazer upload
+              <input id='select' type='file' class="add__product--select select" multiple accept="image/*"/>
+            </label>      -->
+        </div>
+
+        <div class="add__product--input">
+          <p class="img__select" data-imgFile></p>
+          <input
+            type="text"
+            placeholder="Categoria do produto"
+            required
+            id="categoria"
+          />
+          <input
+            type="text"
+            placeholder="Nome do Produto"
+            required
+            id="titulo"
+          />
+          <input
+            type="number"
+            placeholder="Preço do produto"
+            required
+            id="preco"
+          />
+          <textarea
+            placeholder="Descrição do produto"
+            required
+            id="descricao"
+          ></textarea>
+          <input
+            type="submit"
+            class="btn__submit"
+            id="enviar"
+            value="Adicionar produto"
+            data-send
+          />
+        </div>
+        <div class="msg" data-msg>Cadastrado com sucesso</div>
+      </form>
     </main>
-    <!-- Seção footer -->
     <footer class="footer">
       <div class="footer__content wrapper">
         <div class="footer__align">
@@ -84,8 +144,8 @@
         <h3>Desenvolvido por Neilton Seguins &copy;</h3>
         <p>2022</p>
       </div>
+      <div id="teste"></div>
     </footer>
-    <script type="module" src="./js/paginaProduto.js"></script>
     <script src="./js/adicionarProduto.js"></script>
   </body>
 </html>
