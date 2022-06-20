@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="./styles/produtos.css" />
     <link rel="stylesheet" href="./styles/carrinho.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
   </head>
   <body>
+    <div class="modal__dark"></div>
     <!-- Seção cabeçalho -->
     <div class="wrapper">
       <header class="header">
@@ -38,7 +40,7 @@
             <img
               class="header__icon"
               src="./assets/img/searchIcon.svg"
-              alt=""
+              alt="Ícone de buscador"
             />
           </div>
         </div>
@@ -102,6 +104,20 @@
               </div>
             </div>
           </div>
+          <div class="frete">
+            <div class="frete__calcular">
+              <input
+                class="frete__input"
+                maxlength="8"
+                type="text"
+                placeholder="Digite o CEP"
+              />
+              <button class="frete__botao" onclick="calcularFrete()">
+                Calcular frete
+              </button>
+            </div>
+            <span class="frete__valor"></span>
+          </div>
           <div class="carrinho__informacoes">
             <p class="carrinho__textos__total">Total</p>
             <p class="carrinho__valores__total">R$ 120,00</p>
@@ -109,12 +125,31 @@
           <button class="button__carrinho">Finalizar compra</button>
         </div>
       </section>
+      <section class="modal">
+        <img
+          src="./assets/img/Logo.svg"
+          alt="Logo da AluraGeek"
+          class="modal__logo"
+        />
+        <h2 class="modal__titulo">Compra finalizada com sucesso!</h2>
+        <p class="modal__subtitulo">
+          Você receberá a confirmação da sua compra por email. Acompanhe o
+          status do seu pedido por lá.
+        </p>
+        <a class="modal__botao button" href="./index.html"
+          >Voltar para a loja</a
+        >
+      </section>
     </main>
 
     <footer class="footer">
       <div class="footer__content wrapper">
         <div class="footer__align">
-          <img class="footer__logo" src="./assets/img/Logo.png" alt="" />
+          <img
+            class="footer__logo"
+            src="./assets/img/Logo.png"
+            alt="Logo do AluraGeek"
+          />
           <div class="footer__links">
             <a href="#">Quem somos nós</a>
             <a href="#">Política de privacidade</a>
