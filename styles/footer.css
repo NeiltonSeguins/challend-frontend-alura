@@ -57,7 +57,7 @@ footer {
 }
 
 .footer__form input {
-    width: 550px;
+  width: 550px;
   height: 56px;
   background-color: #fff;
   outline: none;
@@ -101,4 +101,9 @@ footer {
   font-size: 1rem;
   color: var(--text-color);
   font-weight: 500;
+}
+
+.footer__sign h3,
+p {
+  line-height: 24px;
 }

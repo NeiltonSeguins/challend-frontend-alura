@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <element>
+    <categoria>Star Wars</categoria>
+    <produtos>
+      <element>
+        <categoria>Star Wars</categoria>
+        <descricao>Voluptas voluptatum quibusdam similique, class debitis ali maecenas eveniet ridiculus, facilis fusce!</descricao>
+        <id>0</id>
+        <img_alt>Caneca Stormtropper</img_alt>
+        <img_url>./assets/img/produtos/star wars/unsplash_6FDXGY9J6y4.png</img_url>
+        <preco>60</preco>
+        <titulo>Produto XYZ</titulo>
+      </element>
+      <element>
+        <categoria>Star Wars</categoria>
+        <descricao>Voluptas voluptatum quibusdam similique, class debitis ali maecenas eveniet ridiculus, facilis fusce!</descricao>
+        <id>1</id>
+        <img_alt>Dart Vader</img_alt>
+        <img_url>./assets/img/produtos/star wars/unsplash_epRFE_hBNjo.png</img_url>
+        <preco>60</preco>
+        <titulo>Produto XYZ</titulo>
+      </element>
+      <element>
+        <categoria>Star Wars</categoria>
+        <descricao>Voluptas voluptatum quibusdam similique, class debitis ali maecenas eveniet ridiculus, facilis fusce!</descricao>
+        <id>2</id>
+        <img_alt>Mestre Yoda</img_alt>
+        <img_url>./assets/img/produtos/star wars/unsplash_KeGToDVN0l4.png</img_url>
+        <preco>60</preco>
+        <titulo>Produto XYZ</titulo>
+      </element>
+      <element>
+        <categoria>Star Wars</categoria>
+        <descricao>Voluptas voluptatum quibusdam similique, class debitis ali maecenas eveniet ridiculus, facilis fusce!</descricao>
+        <id>3</id>
+        <img_alt>Stormtropper</img_alt>
+        <img_url>./assets/img/produtos/star wars/unsplash_4OHkK555s1A.png</img_url>
+        <preco>60</preco>
+        <titulo>Produto XYZ</titulo>
+      </element>
+      <element>
+        <categoria>Star Wars</categoria>
+        <descricao>Voluptas voluptatum quibusdam similique, class debitis ali maecenas eveniet ridiculus, facilis fusce!</descricao>
+        <id>4</id>
+        <img_alt>Baby Yoda</img_alt>
+        <img_url>./assets/img/produtos/star wars/unsplash_R8L1l9RN198.png</img_url>
+        <preco>60</preco>
+        <titulo>Produto XYZ</titulo>
+      </element>
+      <element>
+        <categoria>Star Wars</categoria>
+        <descricao>Voluptas voluptatum quibusdam similique, class debitis ali maecenas eveniet ridiculus, facilis fusce!</descricao>
+        <id>5</id>
+        <img_alt>Kylo Ren</img_alt>
+        <img_url>./assets/img/produtos/star wars/unsplash_1VV1MRafd7A.png</img_url>
+        <preco>60</preco>
+        <titulo>Produto XYZ</titulo>
+      </element>
+    </produtos>
+  </element>
+  <element>
+    <categoria>Consoles</categoria>
+    <produtos>
+      <element>
+        <categoria>Consoles</categoria>
+        <descricao>Voluptas voluptatum quibusdam similique, class debitis ali maecenas eveniet ridiculus, facilis fusce!</descricao>
+        <id>0</id>
+        <img_alt>XBox</img_alt>
+        <img_url>./assets/img/produtos/consoles/Skill.png</img_url>
+        <preco>60</preco>
+        <titulo>Produto XYZ</titulo>
+      </element>
+      <element>
+        <categoria>Consoles</categoria>
+        <descricao>Voluptas voluptatum quibusdam similique, class debitis ali maecenas eveniet ridiculus, facilis fusce!</descricao>
+        <id>1</id>
+        <img_alt>Play Station 4</img_alt>
+        <img_url>./assets/img/produtos/consoles/unsplash_caNzzoxls8Q.png</img_url>
+        <preco>60</preco>
+        <titulo>Produto XYZ</titulo>
+      </element>
+      <element>
+        <categoria>Consoles</categoria>
+        <descricao>Voluptas voluptatum quibusdam similique, class debitis ali maecenas eveniet ridiculus, facilis fusce!</descricao>
+        <id>2</id>
+        <img_alt>Nintendinho</img_alt>
+        <img_url>./assets/img/produtos/consoles/unsplash_ZV7lnfyQLmA.png</img_url>
+        <preco>60</preco>
+        <titulo>Produto XYZ</titulo>
+      </element>
+      <element>
+        <categoria>Consoles</categoria>
+        <descricao>Voluptas voluptatum quibusdam similique, class debitis ali maecenas eveniet ridiculus, facilis fusce!</descricao>
+        <id>3</id>
+        <img_alt>Nintendo Switch</img_alt>
+        <img_url>./assets/img/produtos/consoles/unsplash_wa5z9o9fgjw.png</img_url>
+        <preco>60</preco>
+        <titulo>Produto XYZ</titulo>
+      </element>
+      <element>
+        <categoria>Consoles</categoria>
+        <descricao>Voluptas voluptatum quibusdam similique, class debitis ali maecenas eveniet ridiculus, facilis fusce!</descricao>
+        <id>4</id>
+        <img_alt>X Box</img_alt>
+        <img_url>./assets/img/produtos/consoles/unsplash_Zjn4dT993-g.png</img_url>
+        <preco>60</preco>
+        <titulo>Produto XYZ</titulo>
+      </element>
+      <element>
+        <categoria>Consoles</categoria>
+        <descricao>Voluptas voluptatum quibusdam similique, class debitis ali maecenas eveniet ridiculus, facilis fusce!</descricao>
+        <id>5</id>
+        <img_alt>Gameboy</img_alt>
+        <img_url>./assets/img/produtos/consoles/unsplash_k-xYhI3-gJM.png</img_url>
+        <preco>60</preco>
+        <titulo>Produto XYZ</titulo>
+      </element>
+    </produtos>
+  </element>
+  <element>
+    <categoria>Diversos</categoria>
+    <produtos>
+      <element>
+        <categoria>Diversos</categoria>
+        <descricao>Voluptas voluptatum quibusdam similique, class debitis ali maecenas eveniet ridiculus, facilis fusce!</descricao>
+        <id>0</id>
+        <img_alt>Camisa</img_alt>
+        <img_url>./assets/img/produtos/diversos/Skill.png</img_url>
+        <preco>60</preco>
+        <titulo>Produto XYZ</titulo>
+      </element>
+      <element>
+        <categoria>Diversos</categoria>
+        <descricao>Voluptas voluptatum quibusdam similique, class debitis ali maecenas eveniet ridiculus, facilis fusce!</descricao>
+        <id>1</id>
+        <img_alt>Controle Switch</img_alt>
+        <img_url>./assets/img/produtos/diversos/unsplash_bUgaIaZysH0.png</img_url>
+        <preco>60</preco>
+        <titulo>Produto XYZ</titulo>
+      </element>
+      <element>
+        <categoria>Diversos</categoria>
+        <descricao>Voluptas voluptatum quibusdam similique, class debitis ali maecenas eveniet ridiculus, facilis fusce!</descricao>
+        <id>2</id>
+        <img_alt>Sonic figure</img_alt>
+        <img_url>./assets/img/produtos/diversos/unsplash_sYVY_ZKwaxU.png</img_url>
+        <preco>60</preco>
+        <titulo>Produto XYZ</titulo>
+      </element>
+      <element>
+        <categoria>Diversos</categoria>
+        <descricao>Voluptas voluptatum quibusdam similique, class debitis ali maecenas eveniet ridiculus, facilis fusce!</descricao>
+        <id>3</id>
+        <img_alt>Rádio antigo cor de rosa</img_alt>
+        <img_url>./assets/img/produtos/diversos/unsplash_jMT6BrgBuXU.png</img_url>
+        <preco>60</preco>
+        <titulo>Produto XYZ</titulo>
+      </element>
+      <element>
+        <categoria>Diversos</categoria>
+        <descricao>Voluptas voluptatum quibusdam similique, class debitis ali maecenas eveniet ridiculus, facilis fusce!</descricao>
+        <id>4</id>
+        <img_alt>Óculos de realidade virtual</img_alt>
+        <img_url>./assets/img/produtos/diversos/unsplash_MxVkWPiJALs.png</img_url>
+        <preco>60</preco>
+        <titulo>Produto XYZ</titulo>
+      </element>
+      <element>
+        <categoria>Diversos</categoria>
+        <descricao>Voluptas voluptatum quibusdam similique, class debitis ali maecenas eveniet ridiculus, facilis fusce!</descricao>
+        <id>5</id>
+        <img_alt>Pikachu gigante de pelúcia</img_alt>
+        <img_url>./assets/img/produtos/diversos/unsplash_r27umXAelDc.png</img_url>
+        <preco>60</preco>
+        <titulo>Produto XYZ</titulo>
+      </element>
+    </produtos>
+  </element>
+</root>
